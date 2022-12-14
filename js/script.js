@@ -20,4 +20,12 @@ const shoppingList = [
 let myList = '<ul>';
 
 // Valorizzo gli elemeti della spesa
+let i = 0;
+while (i < shoppingList.length) {
+    myList += `<li>${shoppingList[i]}</li>`;
+    i++;
+}
 
+myList += '</ul>';
+
+resultElement.innerHTML = myList;
