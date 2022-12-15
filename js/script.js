@@ -7,9 +7,8 @@ con un ciclo while.
 */
 
 // Prendo Elementi
-const resultElement = document.getElementById('rsult');
+const resultElement = document.getElementById('result');
 
-// Lista spesa
 const shoppingList = [
    'farina',
    'uova',
@@ -17,15 +16,15 @@ const shoppingList = [
    'latte'
 ];
 
-let myList = '<ul>';
+let items = '<ul>';
 
 // Valorizzo gli elemeti della spesa
 let i = 0;
 while (i < shoppingList.length) {
-    myList += `<li>${shoppingList[i]}</li>`;
+    items += `<li>${shoppingList[i]}</li>`;
     i++;
 }
 
-myList += '</ul>';
+items += '</ul>';
 
-resultElement.innerHTML = myList;
+resultElement.innerHTML = items;
